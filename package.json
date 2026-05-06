@@ -1,0 +1,54 @@
+{
+  "name": "weather-mcp",
+  "version": "1.0.0",
+  "description": "Weather query MCP tool - Query weather via CLI or MCP Server",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "weather-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "weather",
+    "cli",
+    "model-context-protocol",
+    "ai-tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/weather-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/weather-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/weather-mcp#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "commander": "^14.0.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
