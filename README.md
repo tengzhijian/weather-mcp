@@ -32,7 +32,7 @@ npx weather-mcp weather 北京
 ### 方式三：源码安装
 
 ```bash
-git clone https://github.com/yourusername/weather-mcp.git
+git clone https://github.com/tengzhijian/weather-mcp.git
 cd weather-mcp
 npm install
 npm run build
